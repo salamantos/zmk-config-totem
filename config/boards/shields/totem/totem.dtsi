@@ -5,11 +5,13 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        // zmk,matrix_transform removed for ZMK Studio compatibility
+        // Physical layout is used instead
     };
 
     default_transform: keymap_transform_0 {
@@ -40,5 +42,67 @@
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+    };
+
+    totem_physical_layout: totem_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "TOTEM";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        // Keys must be in the same order as in the map array
+        // Row 0: RC(0,0) to RC(0,9) - 10 keys (positions 0-9)
+        // Row 1: RC(1,0) to RC(1,9) - 10 keys (positions 10-19)
+        // Row 2: RC(3,0) then RC(2,0) to RC(2,9) then RC(3,9) - 12 keys (positions 20-31)
+        // Row 3: RC(3,2) to RC(3,4) then RC(3,5) to RC(3,7) - 6 keys (positions 32-37)
+        keys = <
+            // Row 0 - Left half (5 keys)
+            &key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300    0       0     0     0>
+            , <&key_physical_attrs 100 100  400    0       0     0     0>
+            // Row 0 - Right half (5 keys)
+            , <&key_physical_attrs 100 100  600    0       0     0     0>
+            , <&key_physical_attrs 100 100  700    0       0     0     0>
+            , <&key_physical_attrs 100 100  800    0       0     0     0>
+            , <&key_physical_attrs 100 100  900    0       0     0     0>
+            , <&key_physical_attrs 100 100 1000    0       0     0     0>
+            // Row 1 - Left half (5 keys)
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  100       0     0     0>
+            , <&key_physical_attrs 100 100  400  100       0     0     0>
+            // Row 1 - Right half (5 keys)
+            , <&key_physical_attrs 100 100  600  100       0     0     0>
+            , <&key_physical_attrs 100 100  700  100       0     0     0>
+            , <&key_physical_attrs 100 100  800  100       0     0     0>
+            , <&key_physical_attrs 100 100  900  100       0     0     0>
+            , <&key_physical_attrs 100 100 1000  100       0     0     0>
+            // Row 2 - Left side key RC(3,0) (position 20)
+            , <&key_physical_attrs 100 100    0  200       0     0     0>
+            // Row 2 - Left half RC(2,0) to RC(2,4) (5 keys, positions 21-25)
+            , <&key_physical_attrs 100 100  100  200       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  200       0     0     0>
+            , <&key_physical_attrs 100 100  400  200       0     0     0>
+            , <&key_physical_attrs 100 100  500  200       0     0     0>
+            // Row 2 - Right half RC(2,5) to RC(2,9) (5 keys, positions 26-30)
+            , <&key_physical_attrs 100 100  600  200       0     0     0>
+            , <&key_physical_attrs 100 100  700  200       0     0     0>
+            , <&key_physical_attrs 100 100  800  200       0     0     0>
+            , <&key_physical_attrs 100 100  900  200       0     0     0>
+            , <&key_physical_attrs 100 100 1000  200       0     0     0>
+            // Row 2 - Right side key RC(3,9) (position 31)
+            , <&key_physical_attrs 100 100 1100  200       0     0     0>
+            // Row 3 - Left half RC(3,2) to RC(3,4) (3 keys, positions 32-34)
+            , <&key_physical_attrs 100 100  200  300       0     0     0>
+            , <&key_physical_attrs 100 100  300  300       0     0     0>
+            , <&key_physical_attrs 100 100  400  300       0     0     0>
+            // Row 3 - Right half RC(3,5) to RC(3,7) (3 keys, positions 35-37)
+            , <&key_physical_attrs 100 100  600  300       0     0     0>
+            , <&key_physical_attrs 100 100  700  300       0     0     0>
+            , <&key_physical_attrs 100 100  800  300       0     0     0>
+        >;
     };
 };

@@ -95,7 +95,7 @@
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI SEMI
     &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp SQT     &kp LBKT
                                         
-                                        &kp DEL     &lt NAV SPACE  &kp LCTRL    &lt SYM ENTER  &lt NAV SPACE  &kp BSPC
+                                        &kp DEL     &lt NAV SPACE  &kp LCTRL    &kp A  &kp B  &kp C
             >;
         };
 

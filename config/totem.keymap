@@ -49,7 +49,7 @@
         combo_caps_word {
             timeout-ms = <50>;
             layers = <ALPHA>;
-            key-positions = <14 17>;
+            key-positions = <13 16>;
             bindings = <&caps_word>;
         };
     };
@@ -118,7 +118,7 @@
 // ┃   LANG    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     ]     ┃     '     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//                                     ┃   SHIFT   ┃ SPC→SYM   ┃    CMD    ┃   ┃    FUNC   ┃ SPC→SYM   ┃   BSPC    ┃
+//                                     ┃   SHIFT   ┃ SPC→SYM   ┃    CMD    ┃   ┃ ENT→FUNC  ┃ SPC→SYM   ┃   BSPC    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -138,7 +138,7 @@
                   &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G               &kp H  &hrm LSHFT J  &hrm LGUI K  &hrm LALT L  &hrm LCTRL SEMI
     &kp CAPSLOCK  &kp Z         &kp X        &kp C        &kp V         &kp B               &kp N  &kp M         &kp COMMA    &kp DOT      &kp RBKT     &kp SINGLE_QUOTE
 
-                                             &kp LSHFT    &lt SYMB SPACE   &kp LGUI         &mo FUNC   &lt SYMB SPACE   &kp BSPC
+                                             &kp LSHFT    &lt SYMB SPACE   &kp LGUI         &lt FUNC ENTER   &lt SYMB SPACE   &kp BSPC
             >;
         };
 
@@ -149,7 +149,7 @@
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     $     ┃     &     ┃     [     ┃     {     ┃    (      ┃   ┃     )     ┃     }     ┃     ]     ┃     *     ┃     ^     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     :     ┃     %     ┃     "     ┃     _     ┃    !      ┃   ┃     ?     ┃     -     ┃     '     ┃     #     ┃     ;     ┃
+//             ┃     %     ┃     "     ┃     :     ┃     _     ┃    !      ┃   ┃     ?     ┃     -     ┃     ;     ┃     '     ┃    #      ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃   `➤~     ┃           ┃     @     ┃    +      ┃     <     ┃   ┃     >     ┃     =     ┃     ,     ┃     .     ┃    /      ┃    \➤|    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -160,7 +160,7 @@
             label= "SYMB";
             bindings = <
                               &kp DOLLAR    &kp AMPS      &kp LBKT      &kp LBRC      &kp LPAR        &kp RPAR    &kp RBRC      &kp RBKT      &kp ASTERISK  &kp CARET   
-                              &kp COLON     &kp PERCENT   &kp DQT       &kp UNDER     &kp EXCL        &kp QMARK   &kp MINUS     &kp SQT       &kp HASH      &kp SEMI
+                              &kp PERCENT   &kp DQT       &kp COLON     &kp UNDER     &kp EXCL        &kp QMARK   &kp MINUS     &kp SEMI      &kp SQT       &kp HASH
                 &none         &kp GRAVE     &none         &kp AT        &kp PLUS      &kp LT          &kp GT      &kp EQUAL     &kp COMMA     &kp DOT       &kp SLASH     &kp BACKSLASH
 
                                                           &none         &kp LSHFT     &none           &none       &kp LSHFT     &none
@@ -172,11 +172,11 @@
 // ┃ FUNC LAYER                            ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃   LOCK    ┃           ┃           ┃   BR↑     ┃   VOL↑    ┃   ┃           ┃   HOME    ┃     ↑     ┃    END    ┃  RECORD   ┃
+//             ┃     =     ┃     7     ┃     8     ┃     9     ┃     0     ┃   ┃   VOL↑    ┃   HOME    ┃     ↑     ┃    END    ┃  RECORD   ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃   MUTE    ┃   ┃           ┃     ←     ┃     ↓     ┃     →     ┃SCREENSHOT ┃
+//             ┃     *     ┃     4     ┃     5     ┃     6     ┃     +     ┃   ┃   MUTE    ┃     ←     ┃     ↓     ┃     →     ┃SCREENSHOT ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃ SOFT OFF  ┃           ┃           ┃   BR↓     ┃   VOL↓    ┃   ┃           ┃     ←←    ┃           ┃     →→    ┃           ┃           ┃
+// ┃     .     ┃     /     ┃     1     ┃     2     ┃     3     ┃     -     ┃   ┃   VOL↓    ┃     ←←    ┃           ┃     →→    ┃           ┃   LOCK    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //                                     ┃           ┃           ┃  F_KEYS   ┃   ┃           ┃           ┃           ┃
@@ -184,11 +184,11 @@
         func {
             label= "FUNC";
             bindings = <
-                              &kp LG(LC(Q)) &none      &none     &kp C_BRI_UP &kp C_VOL_UP          &none   &kp HOME     &kp UP    &kp END        &kp LG(LS(N5))   
-                              &none         &none      &none     &none        &kp C_MUTE            &none   &kp LEFT     &kp DOWN  &kp RIGHT      &kp LG(LS(X))
-                &none         &soft_off     &none      &none     &kp C_BRI_DN &kp C_VOL_DN          &none   &kp LA(LEFT) &none     &kp LA(RIGHT)  &none            &none
+                              &kp EQUAL &kp N7    &kp N8    &kp N9    &kp N0        &kp C_VOL_UP &kp HOME     &kp UP    &kp END        &kp LG(LS(N5))   
+                              &kp STAR  &kp N4    &kp N5    &kp N6    &kp PLUS      &kp C_MUTE   &kp LEFT     &kp DOWN  &kp RIGHT      &kp LG(LS(X))
+                &kp DOT       &kp SLASH &kp N1    &kp N2    &kp N3    &kp MINUS     &kp C_VOL_DN &kp LA(LEFT) &none     &kp LA(RIGHT)  &none            &kp LG(LC(Q))
 
-                                                       &none     &none        &mo F_KEYS            &none   &none        &none
+                                                  &none     &none     &mo F_KEYS    &none        &none        &none
             >;
         };
 

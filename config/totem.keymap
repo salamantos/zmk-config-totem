@@ -184,8 +184,7 @@
 //                                     ┃           ┃           ┃  F_KEYS   ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
         func {
-            label= "FUNC";
-            display-name="FUNCTIONS";
+            display-name="FUNC";
             bindings = <
                               &kp EQUAL &kp N7    &kp N8    &kp N9    &kp N0        &kp C_VOL_UP &kp HOME     &kp UP    &kp END        &kp LG(LS(N5))   
                               &kp STAR  &kp N4    &kp N5    &kp N6    &kp PLUS      &kp C_MUTE   &kp LEFT     &kp DOWN  &kp RIGHT      &kp LG(LS(X))
@@ -210,7 +209,6 @@
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
         f_keys {
-            label="F_KEYS";
             display-name="F KEYS";
             bindings = <
                               &kp F1    &kp F2    &kp F3    &kp F4    &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4

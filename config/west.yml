@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/salamantos
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: salamantos
       revision: main
       import: app/west.yml
     - name: prospector-zmk-module

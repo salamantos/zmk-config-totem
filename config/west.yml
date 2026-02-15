@@ -1,7 +1,5 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
     - name: salamantos
       url-base: https://github.com/salamantos
   projects:
@@ -14,4 +12,3 @@ manifest:
       revision: feat/new-status-screens
   self:
     path: config
-

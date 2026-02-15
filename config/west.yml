@@ -14,3 +14,4 @@ manifest:
       revision: feat/new-status-screens
   self:
     path: config
+
